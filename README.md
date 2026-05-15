@@ -1,6 +1,6 @@
 # claude-helpers
 
-A few markdown files I keep in my Claude projects to make Claude better at specific things: prompting, copy, marketing strategy, knowledge management.
+A few markdown files I keep in my Claude projects to make Claude better at specific things: prompting, writing, copy, marketing strategy, knowledge management, decisions.
 
 ## How to use
 
@@ -18,6 +18,14 @@ Each file works as project knowledge (Claude pulls from it automatically across 
 
 Anthropic's prompting docs condensed into one file. XML structuring, chain of thought, multishot examples, model-specific tips for Claude 4.x / 4.5 / Opus 4.6, strategies for reducing hallucination, Cowork patterns. Based on docs.anthropic.com as of Feb 2026.
 
+### subagent-catalog.md
+
+Eight common subagent archetypes for Claude Code (researcher, critic, devil's advocate, planner, implementer, summarizer, tester, debugger), each with a ready-to-paste prompt. Includes notes on when to chain them and when parallelism actually helps.
+
+### anti-ai-writing.md
+
+Rules for writing prose that doesn't read like a language model wrote it. Vocabulary to avoid with replacements, structural patterns to break, an audit checklist for first drafts. Drop it into a project and tell Claude to follow it before writing anything that needs to read human.
+
 ### copywriting-masters.md
 
 Persuasive-copy diagnostics and theory built around six classic copywriters: Schwartz, Hopkins, Halbert, Caples, Collier, Ogilvy. The top of the file is a diagnostic that picks the right master based on audience awareness and market sophistication. Useful when Claude is writing sales pages, ads, or pitches.
@@ -30,6 +38,10 @@ Frameworks pulled from 13 marketing books (Blue Ocean Strategy, Cialdini's *Infl
 
 A pattern for using an LLM to build and maintain a personal knowledge base. The LLM does the bookkeeping (cross-references, summaries, contradictions) that humans normally abandon. Pairs well with Obsidian.
 
+### pre-mortem.md
+
+A short framework for de-risking a project before you start. The reframe: imagine it's six months from now and the project failed; what killed it? Includes a ready prompt for Claude and a worked example.
+
 ### qa-agent-template.md
 
 A reusable pre-release QA agent. Built around iOS/Swift but the structure adapts to any language. You fill in the project-specific scope sections; the role definition, examples, and self-critique step stay the same.
@@ -40,7 +52,7 @@ These are too long to paste every time, and too specific to bake into a system p
 
 ## Attribution
 
-The prompting file is a condensation of Anthropic's public documentation. The copywriting and marketing files distill principles from published books; author and title credit appears inline in each file. The LLM wiki pattern is an original write-up.
+The prompting file is a condensation of Anthropic's public documentation. The copywriting and marketing files distill principles from published books; author and title credit appears inline in each file. The anti-AI-writing file builds on the [Wikipedia "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) article (descriptive catalog) and turns it into prescriptive rules. The LLM wiki pattern and pre-mortem framework are original write-ups; pre-mortem credits Gary Klein's research on the technique.
 
 ## What's not in here
 
